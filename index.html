@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CREDITBIN✨</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="script.js">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">
+      <img src="C:\Users\2020140\Downloads\CREDITBIN✨.png" alt="Fiverr Logo" style="height: 65px;width: 350px;">
+      </a>
+      <ul class="menu-links">
+      <li><a href="model.html">Home</a></li>
+      <li><a href="model-1.html">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li class="language-item">
+          <a href="#">
+            <span class="material-symbols-outlined">language</span>
+            How it Works?
+        </a>
+        </li>
+        <li><a href="#">Our App</a></li>
+        <li><button class="signin-button"onclick="openSignIn()">Login</button></li>
+        <li class="join-btn"><a href="#">Contact Us</a></li>
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+  <section class="hero-section">
+    <div class="content">
+      <h1>Rewards for Responsible Waste Management💰</h1>
+      <form action="#"class="search-form">
+        <input type="text"placeholder="Search here..." required ;>
+        <button class="material-symbols-outlined" type="sumbit">search
+</button>
+      </form>
+      <div class="popular-tags">
+        Popular:
+        <ul class="tags">
+          <li><a href="#">Webite Design</a></li>
+          <li><a href="#">Logo Design</a></li>
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">AI Design</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="form-box">
+  </div>
+  <div class="modal-background"id="modalBackground">
+    <div class="modal-content">
+    <h2>Login👤</h2>
+    <form action="#" class="signin-form">
+    <label for="username">Username:</label>
+    <input type="text"id="username"name="username"required><br><br>
+    <label for="password">Password:</label>
+    <input type="password"id="password"name="password"required><br><br>
+    <button class="forgotpassword" type="submit">Forgot password?</button>
+
+    <button class="loginpage" type="submit">Login</button>
+    </form>
+     <button class="register" onclick="toggleRegisterForm()">Don't Have An Account ? register</button>
+    <div id ="registerForm" style="display: none;">
+
+    <h3>Register🧑‍💻</h3>
+    <form id="registerUserForm">
+      <label for="registername">FullName:</label>
+      <input type="text" id="registername" name="registername" required><br><br>
+      <label for="registerEmail">Email:</label>
+      <input for="Email"id="registerEmail" name="registerEmail"required><br><br>
+    </form>
+        </div>
+    </div>
+
+    <script>
+      function openSignIn() {
+            document.getElementById("modalBackground").style.display= "block";
+      }
+          function closeSignIn() {
+       document.getElementById("modalBackground").style.display= "none";
+      
+      }
+          
+    </script>
+
+
+</body>
+
+</html> 
